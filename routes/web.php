@@ -21,6 +21,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('maquina/reparo', 'MaquinaController');
 
+Route::resource('maquina/rede', 'RedeController');
+
 Route::resource('maquina/aguardo', 'AguardoController');
 
 Route::get('arquivo_pdf', 'PdfController@index');

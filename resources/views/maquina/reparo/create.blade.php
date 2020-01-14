@@ -75,14 +75,14 @@
                 <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="ip">IP</label>
-                        <input type="text" name="ip" class="form-control" placeholder="IP...">
+                        <input type="text" name="ip" id="ip" data-mask="00.00.00.000" class="form-control" placeholder="IP...">
                     </div>
                 </div>
 
                 <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="chegada">Chegada</label>
-                        <input type="date" name="data_chegada" class="form-control" placeholder="Chegada...">
+                        <input type="text" name="data_chegada" data-mask="00/00/0000" class="form-control" placeholder="Chegada...">
                     </div>
                 </div>
 
@@ -110,14 +110,14 @@
                 <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="libera">Data de Liberação</label>
-                        <input type="date" name="liberado_em" class="form-control" placeholder="Data de liberação...">
+                        <input type="text" name="liberado_em" data-mask="00/00/0000" class="form-control" placeholder="Data de liberação...">
                     </div>
                 </div>
 
                 <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="envio">Data de envio</label>
-                        <input type="date" name="enviado_em" class="form-control" placeholder="Data de envio...">
+                        <input type="text" name="enviado_em" data-mask="00/00/0000" class="form-control" placeholder="Data de envio...">
                     </div>
                 </div>
 

@@ -88,7 +88,7 @@
                 <li><a href="/maquina/aguardo"><i class="fa fa-circle-o"></i> Liberadas</a></li>
                 <li><a href="/maquina/separa"><i class="fa fa-circle-o"></i> Emissão de recibo</a></li>
                 <li><a href="/maquina/reparo"><i class="fa fa-circle-o"></i> Lista Geral</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> Rede</a></li>
+                <li><a href="/maquina/rede"><i class="fa fa-circle-o"></i> Rede</a></li>
               </ul>
             </li>
             <li class="treeview">
@@ -197,6 +197,7 @@
       
     <!-- jQuery 2.1.4 -->
     <script src="{{asset('js/jQuery-2.1.4.min.js')}}"></script>
+    <script src="{{asset('js/jquery.mask.js')}}"></script>
     <!-- Bootstrap 3.3.5 -->
     <script src="{{asset('js/bootstrap.min.js')}}"></script>
     <!-- AdminLTE App -->

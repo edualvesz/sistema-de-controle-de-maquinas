@@ -17,10 +17,10 @@ class MaquinaController extends Controller
 
     }
 
-    public function index(Request $request){
+    public function index(Request $request){  //todos os campos serao mostrados na index
 
         if($request){
-            $query=trim($request->get('searchText'));
+            $query=trim($request->get('searchText')); 
             $maquinas=DB::table('tb_maquina')
             ->where('patrimonio', 'LIKE', '%'.$query.'%')
             ->where('condicao', '=', '1')
