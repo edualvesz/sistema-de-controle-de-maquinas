@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sistema com Laravel - Eduardo Alves do Nascimento</title>
+    <title>SISMAN</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -53,7 +53,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Sair') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -84,9 +84,10 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="/maquina/liberado"><i class="fa fa-circle-o"></i> Aguardando reparo</a></li>
-                <li><a href="/maquina/aguardo"><i class="fa fa-circle-o"></i> Liberadas</a></li>
-                <li><a href="/maquina/separa"><i class="fa fa-circle-o"></i> Emissão de recibo</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Aguardando reparo</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Liberadas</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Emissão de recibo</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Emissão de identificação</a></li>
                 <li><a href="/maquina/reparo"><i class="fa fa-circle-o"></i> Lista Geral</a></li>
                 <li><a href="/maquina/rede"><i class="fa fa-circle-o"></i> Rede</a></li>
               </ul>
@@ -112,8 +113,8 @@
                  <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="/venda/vendas"><i class="fa fa-circle-o"></i> Por Patrimônio</a></li>
-                <li><a href="/venda/cliente"><i class="fa fa-circle-o"></i> Por Unidade</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Por Patrimônio</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Por Unidade</a></li>
               </ul>
             </li>
                        

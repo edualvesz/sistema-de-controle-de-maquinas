@@ -21,8 +21,9 @@ class RedeController extends Controller
             $redes=DB::table('tb_maquina')
             ->where('patrimonio', 'LIKE', '%'.$query.'%')
             ->where('condicao', '=', '1')
-            ->orderBy('id_maquina', 'desc');
-            $redes = $redes->get(); //foi necessario por isso pq ele nao estava encontrando a variavel da view
+            ->orderBy('id_maquina', 'desc')
+            ->paginate(18);
+            //$redes = $redes->get(); foi necessario por isso pq ele nao estava encontrando a variavel da view, mais na frete quando coloquei o paginate comecou a funcionar sem
             return view ('maquina.rede.index', ["redes"=>$redes, "searchRede"=>$query]);
         }
     }
