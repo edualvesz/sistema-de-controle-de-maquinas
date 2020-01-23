@@ -37,14 +37,14 @@
                             <td>{{ $maquina->liberado_em}}</td>
                             <td>{{ $maquina->enviado_em}}</td>
                             <td>
-                                <a href="{{URL::action('MaquinaController@edit',$maquina->id_maquina)}}"><button class="btn btn-info">Editar</button></a>
-                                <a href="" data-target="#modal-delete-{{$maquina->id_maquina}}" data-toggle="modal"><button class="btn btn-danger">Excluir</button></a>
+                                <a href="{{URL::action('MaquinaController@edit',$maquina->id_maquina)}}"><button class="btn btn-primary btn-sm">Editar</button></a>
+                                <a href="" data-target="#modal-delete-{{$maquina->id_maquina}}" data-toggle="modal"><button class="btn btn-danger btn-sm">Excluir</button></a>
                             </td>
                         </tr>
                         @include('maquina.reparo.modal')
                     @endforeach
                 </table>
-                <a href="{{ url('arquivo_pdf/pdf') }}" class="btn btn-danger">Gerar PDF</a>
+                <a href="{{ url('arquivo_pdf/pdf') }}" class="btn btn-info btn-sm">Gerar PDF</a>
             </div>
             {{$maquinas->render()}}
         </div>

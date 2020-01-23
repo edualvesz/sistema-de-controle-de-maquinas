@@ -107,8 +107,8 @@
             </div>
 
             <div class="form-group">
-                <button class="btn btn-success" type="submit">Salvar</button>
-                <button class="btn btn-info" onclick='history.go(-1)'>Cancelar</button>
+                <button class="btn btn-primary btn-sm" type="submit">Salvar</button>
+                <button class="btn btn-danger btn-sm" onclick='history.go(-1)'>Cancelar</button>
             </div>
 
             {!!Form::close()!!}

@@ -124,8 +124,8 @@
             </div>
 
             <div class="form-group">
-                <button class="btn btn-primary" type="submit">Salvar</button>
-                <button class="btn btn-danger" type="reset">Cancelar</button>
+                <button class="btn btn-primary btn-sm" type="submit">Salvar</button>
+                <button class="btn btn-danger btn-sm" type="reset">Cancelar</button>
             </div>
 
             {!!Form::close()!!}

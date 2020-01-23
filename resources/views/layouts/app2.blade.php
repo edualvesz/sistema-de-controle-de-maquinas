@@ -15,8 +15,8 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="{{asset('css/_all-skins.min.css')}}">
-    <link rel="apple-touch-icon" href="{{asset('img/apple-touch-icon.png')}}">
-    <link rel="shortcut icon" href="{{asset('img/favicon.ico')}}">
+    <link rel="fav_pc" href="{{asset('img/fav_pc.png')}}">
+    <link rel="shortcut icon" href="{{asset('img/fav_pc.png')}}">
 
   </head><!--Tema do layout-->
   <body class="fixed sidebar-mini sidebar-mini-expand-feature skin-blue">
