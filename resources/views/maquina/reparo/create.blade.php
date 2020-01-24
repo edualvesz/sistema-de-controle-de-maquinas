@@ -22,8 +22,15 @@
                 <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="regiao">Região</label>
-                        <input type="text" name="regiao" required value="{{old('regiao')}}" class="form-control" placeholder="Região...">
-                        
+                        <!--<input type="text" name="regiao" required value="{{old('regiao')}}" class="form-control" placeholder="Região...">-->
+                            <select name="regiao" id="" class="form-control">
+                                <option value=""></option>
+                                <option value="">CAPITAL</option>
+                                <option value="">CENTRAL</option>
+                                <option value="">NOROESTE</option>
+                                <option value="">OESTE</option>
+                                <option value="">VALE E LITORAL</option>
+                            </select>
                     </div>
                 </div>
 
@@ -44,8 +51,9 @@
                 <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="marca">Marca</label>
-                        <input type="text" list="mar" name="marca" required value="{{old('marca')}}" class="form-control" placeholder="Marca...">
-                        <!--<select name="marca" id="" class="form-control">
+                        <!--<input type="text" list="mar" name="marca" required value="{{old('marca')}}" class="form-control" placeholder="Marca...">-->
+                        <select name="marca" id="" class="form-control">
+                            <option value=""></option>
                             <option value="">DATEN</option>
                             <option value="">DELL</option>
                             <option value="">HP</option>
@@ -61,7 +69,7 @@
                             <option value="">SEMP TOSHIBA</option>
                             <option value="">VAIP</option>
                             <option value="">XTA</option>
-                        </select>-->
+                        </select>
                     </div>
                 </div>
 
