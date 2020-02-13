@@ -22,15 +22,15 @@
                 <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="regiao">Região</label>
-                        <!--<input type="text" name="regiao" required value="{{old('regiao')}}" class="form-control" placeholder="Região...">-->
-                            <select name="regiao" id="" class="form-control">
+                        <input type="text" name="regiao" required value="{{old('regiao')}}" class="form-control" placeholder="Região...">
+                            <!--<select name="regiao" id="" class="form-control">
                                 <option value=""></option>
                                 <option value="">CAPITAL</option>
                                 <option value="">CENTRAL</option>
                                 <option value="">NOROESTE</option>
                                 <option value="">OESTE</option>
                                 <option value="">VALE E LITORAL</option>
-                            </select>
+                            </select>-->
                     </div>
                 </div>
 
@@ -51,8 +51,8 @@
                 <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="marca">Marca</label>
-                        <!--<input type="text" list="mar" name="marca" required value="{{old('marca')}}" class="form-control" placeholder="Marca...">-->
-                        <select name="marca" id="" class="form-control">
+                        <input type="text" list="mar" name="marca" required value="{{old('marca')}}" class="form-control" placeholder="Marca...">
+                        <!--<select name="marca" id="" class="form-control">
                             <option value=""></option>
                             <option value="">DATEN</option>
                             <option value="">DELL</option>
@@ -69,7 +69,7 @@
                             <option value="">SEMP TOSHIBA</option>
                             <option value="">VAIP</option>
                             <option value="">XTA</option>
-                        </select>
+                        </select>-->
                     </div>
                 </div>
 
@@ -84,6 +84,20 @@
                     <div class="form-group">
                         <label for="ip">IP</label>
                         <input type="text" name="ip" id="ip" data-mask="00.00.00.000" class="form-control" placeholder="IP...">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="ip">Máscara</label>
+                        <input type="text" name="mascara" id="ip" data-mask="000.000.000.000" class="form-control" placeholder="Máscara...">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="ip">Gateway</label>
+                        <input type="text" name="gateway" id="ip" data-mask="00.00.00.000" class="form-control" placeholder="Gateway...">
                     </div>
                 </div>
 
@@ -112,6 +126,14 @@
                     <div class="form-group">
                         <label for="tecnico">Técnico</label>
                         <input type="text" name="tecnico" class="form-control" placeholder="Técnico...">
+                        <!--<select name="marca" id="" class="form-control">
+                            <option value=""></option>
+                            <option value="">BRUNA</option>
+                            <option value="">CARLOS</option>
+                            <option value="">EDUARDO</option>
+                            <option value="">RAFAEL</option>
+                            <option value="">RAFAEL</option>
+                        </select>-->    
                     </div>
                 </div>
 

@@ -59,7 +59,7 @@ class MaquinaController extends Controller
         return view("maquina.reparo.show", ["maquina"=>SisManutencaoMaquina::findOrFail($id)]);
     }
 
-    public function edit($id){
+    public function edit($id){          //direciona para a pagina de edição
         $maquina = SisManutencaoMaquina::findOrFail($id);
         $maquinas = DB::table('tb_maquina')
         ->where('condicao', '=', '1')->get();

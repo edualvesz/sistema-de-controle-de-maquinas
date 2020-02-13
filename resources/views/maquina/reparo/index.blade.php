@@ -11,17 +11,17 @@
             <div class="table-responsive">
                 <table class="table table-striped table-bordered table-condensed table-hover">
                     <thead>
-                    <th>Regiao</th>
-                    <th>Unidade</th>
-                    <th>Marca</th>
-                    <th>Patrimônio</th>
-                    <th>IP</th>
-                    <th>Chegada</th>
-                    <th>Situação</th>
-                    <th>Problema</th>
-                    <th>Técnico</th>
-                    <th>Data Liberação</th>
-                    <th>Data Envio</th>
+                        <th>Regiao</th>
+                        <th>Unidade</th>
+                        <th>Marca</th>
+                        <th>Patrimônio</th>
+                        <th>IP</th>
+                        <th>Chegada</th>
+                        <th>Situação</th>
+                        <th>Problema</th>
+                        <th>Técnico</th>
+                        <th>Data Liberação</th>
+                        <th>Data Envio</th>
                     </thead>
                     @foreach ($maquinas as $maquina)
                         <tr>
@@ -46,7 +46,7 @@
                 </table>
                 <a href="{{ url('arquivo_pdf/pdf') }}" class="btn btn-info btn-sm">Gerar PDF</a>
             </div>
-            {{$maquinas->render()}}
+            {{$maquinas->render()}} <!-- isso monta a paginação -->
         </div>
     </div>
 @stop

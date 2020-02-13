@@ -22,7 +22,7 @@ class RedeController extends Controller
             ->where('patrimonio', 'LIKE', '%'.$query.'%')
             ->where('condicao', '=', '1')
             ->orderBy('id_maquina', 'desc')
-            ->paginate(18);
+            ->paginate(10);
             //$redes = $redes->get(); foi necessario por isso pq ele nao estava encontrando a variavel da view, mais na frete quando coloquei o paginate comecou a funcionar sem
             return view ('maquina.rede.index', ["redes"=>$redes, "searchRede"=>$query]);
         }
@@ -32,20 +32,33 @@ class RedeController extends Controller
         
     }
 
-    public function store(){
-        
+    public function store(RedeFormRequest $request){
+        $rede = new RedeFormRequest;
+        $rede->ip=$request->get('ip');
+        $rede->mascara=$request->get('mascara');
+        $rede->gateway=$request->get('gateway');
+        $rede->save();
+        return Redirect::to('maquina/rede');
     }
 
-    public function show(){
-
+    public function show($id){
+        return view("maquina.reparo.show", ["maquina"=>RedeFormRequest::findOrFail($id)]);
     }
 
-    public function edit(){
-        
+    public function edit($id){                     //direciona para a pagina de edição
+        $rede = SisManutencaoRede::findOrFail($id);
+        $redes = DB::table('tb_maquina')
+        ->where('condicao', '=', '1')->get();
+        return view("maquina.rede.edit", ["rede"=>$rede, "redes"=>$redes]);
     }
 
-    public function update(){
-
+    public function update(RedeFormRequest $request, $id){
+        $rede=SisManutencaoRede::findOrFail($id);
+        $rede->ip=$request->get('ip');
+        $rede->mascara=$request->get('mascara');
+        $rede->gateway=$request->get('gateway');
+        $rede->update();
+        return Redirect::to('maquina/rede');
     }
 
     public function destroy(){

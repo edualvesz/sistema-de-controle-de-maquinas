@@ -2,7 +2,7 @@
 @section('conteudo')
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <h3>Nova Máquina</h3>
+            <h3>Editar informações</h3>
             @if (count($errors)>0)
                 <div class="alert alert-danger">
                     <ul>
@@ -59,6 +59,20 @@
                     <div class="form-group">
                         <label for="ip">IP</label>
                         <input type="text" name="ip" value="{{$maquina->ip}}" data-mask="00.00.00.000" class="form-control" placeholder="IP...">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="ip">Mascara</label>
+                        <input type="text" name="ip" value="{{$maquina->mascara}}" data-mask="000.000.000.000" class="form-control" placeholder="Mascara...">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="ip">Gateway</label>
+                        <input type="text" name="ip" value="{{$maquina->gateway}}" data-mask="00.00.00.000" class="form-control" placeholder="Gateway...">
                     </div>
                 </div>
 
