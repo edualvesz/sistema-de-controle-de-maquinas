@@ -42,7 +42,7 @@ class RedeController extends Controller
     }
 
     public function show($id){
-        return view("maquina.reparo.show", ["maquina"=>RedeFormRequest::findOrFail($id)]);
+        return view("maquina.rede.show", ["rede"=>RedeFormRequest::findOrFail($id)]);
     }
 
     public function edit($id){                     //direciona para a pagina de edição
