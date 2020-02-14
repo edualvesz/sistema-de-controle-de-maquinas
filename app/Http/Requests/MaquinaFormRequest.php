@@ -29,6 +29,8 @@ class MaquinaFormRequest extends FormRequest
             'marca'=>'max:256',
             'patrimonio'=>'required|max:256',
             'ip'=>'max:256',
+            'mascara'=>'max:256',
+            'gateway'=>'max:256',
             'data_chegada'=>'max:20',
             'situacao'=>'max:256',
             'problema'=>'max:256',

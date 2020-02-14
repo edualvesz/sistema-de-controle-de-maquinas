@@ -44,6 +44,8 @@ class MaquinaController extends Controller
         $maquina->marca=$request->get('marca');
         $maquina->patrimonio=$request->get('patrimonio');
         $maquina->ip=$request->get('ip');
+        $maquina->mascara=$request->get('mascara');
+        $maquina->gateway=$request->get('gateway');
         $maquina->data_chegada=$request->get('data_chegada');
         $maquina->situacao=$request->get('situacao');
         $maquina->problema=$request->get('problema');

@@ -24,19 +24,13 @@ class RedeFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'regiao'=>'max:256',
+ 
             'unidade'=>'max:256',
             'marca'=>'max:256',
             'patrimonio'=>'required|max:256',
             'ip'=>'max:256',
             'mascara'=>'max:256',
             'gateway'=>'max:256',
-            'data_chegada'=>'max:20',
-            'situacao'=>'max:256',
-            'problema'=>'max:256',
-            'tecnico'=>'max:256',
-            'liberado_em'=>'max:20',
-            'enviado_em'=>'max:20',
         ];
     }
 }
