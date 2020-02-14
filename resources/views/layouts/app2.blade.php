@@ -203,6 +203,13 @@
     <script src="{{asset('js/bootstrap.min.js')}}"></script>
     <!-- AdminLTE App -->
     <script src="{{asset('js/app.min.js')}}"></script>
-    
+    <script type="text/javascript">
+    // INICIO FUNÇÃO DE MASCARA MAIUSCULA
+    function maiuscula(z){
+    v = z.value.toUpperCase();
+    z.value = v;
+    }
+    //FIM DA FUNÇÃO MASCARA MAIUSCULA
+    </script>
   </body>
 </html>

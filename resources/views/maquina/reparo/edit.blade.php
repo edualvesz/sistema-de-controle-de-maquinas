@@ -22,7 +22,7 @@
                 <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="regiao">Região</label>
-                        <input type="text" name="regiao" required value="{{$maquina->regiao}}" class="form-control" placeholder="Região...">
+                        <input type="text" name="regiao" required value="{{$maquina->regiao}}" class="form-control" placeholder="Região..." onkeyup="maiuscula(this)">
                         
                     </div>
                 </div>
@@ -30,21 +30,14 @@
                 <div class="col-lg-6 col-sm-6 col-xs-12">   <!-- verificar isso depois de truncar as tabelas e refazer as relações-->
                     <div class="form-group">
                         <label for="unidade">Unidade</label>
-                        <input type="text" list="uni" name="unidade" required value="{{old('unidade')}}" class="form-control" placeholder="Unidade...">
-                        <datalist id="uni">
-                            @foreach($maquinas as $maq)
-                                <option value="{{$maq->unidade}}">
-                                    {{$maq->unidade}}
-                                </option>    
-                            @endforeach
-                        </datalist>
+                        <input type="text" list="uni" name="unidade" required value="{{$maquina->unidade}}" class="form-control" placeholder="Unidade..." onkeyup="maiuscula(this)">
                     </div>
                 </div>
 
                 <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="marca">Marca</label>
-                        <input type="text" name="marca" required value="{{$maquina->marca}}" class="form-control" placeholder="Marca...">
+                        <input type="text" name="marca" required value="{{$maquina->marca}}" class="form-control" placeholder="Marca..." onkeyup="maiuscula(this)">
                     </div>
                 </div>
 
@@ -86,7 +79,7 @@
                 <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="situacao">Situação</label>
-                        <input type="text" name="situacao" value="{{$maquina->situacao}}" class="form-control" placeholder="Situação...">
+                        <input type="text" name="situacao" value="{{$maquina->situacao}}" class="form-control" placeholder="Situação..." onkeyup="maiuscula(this)">
                     </div>
                 </div>
 
@@ -100,7 +93,7 @@
                 <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="tecnico">Técnico</label>
-                        <input type="text" name="tecnico" value="{{$maquina->tecnico}}" class="form-control" placeholder="Técnico..." readonly>
+                        <input type="text" name="tecnico" value="{{$maquina->tecnico}}" class="form-control" placeholder="Técnico..." readonly onkeyup="maiuscula(this)">
                     </div>
                 </div>
 

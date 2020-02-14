@@ -22,7 +22,7 @@
                 <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="regiao">Região</label>
-                        <input type="text" name="regiao" required value="{{old('regiao')}}" class="form-control" placeholder="Região...">
+                        <input type="text" name="regiao" required value="{{old('regiao')}}" class="form-control" placeholder="Região..." onkeyup="maiuscula(this)">
                             <!--<select name="regiao" id="" class="form-control">
                                 <option value=""></option>
                                 <option value="">CAPITAL</option>
@@ -37,7 +37,7 @@
                 <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="unidade">Unidade</label>
-                        <input type="text" list="uni" name="unidade" required value="{{old('unidade')}}" class="form-control" placeholder="Unidade...">
+                        <input type="text" list="uni" name="unidade" required value="{{old('unidade')}}" class="form-control" placeholder="Unidade..." onkeyup="maiuscula(this)">
                         <datalist id="uni">
                             @foreach($maquinas as $maq)
                                 <option value="{{$maq->unidade}}">
@@ -51,7 +51,7 @@
                 <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="marca">Marca</label>
-                        <input type="text" list="mar" name="marca" required value="{{old('marca')}}" class="form-control" placeholder="Marca...">
+                        <input type="text" list="mar" name="marca" required value="{{old('marca')}}" class="form-control" placeholder="Marca..." onkeyup="maiuscula(this)">
                         <!--<select name="marca" id="" class="form-control">
                             <option value=""></option>
                             <option value="">DATEN</option>
@@ -111,7 +111,7 @@
                 <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="situacao">Situação</label>
-                        <input type="text" name="situacao" class="form-control" placeholder="Situação...">
+                        <input type="text" name="situacao" class="form-control" placeholder="Situação..." onkeyup="maiuscula(this)">
                     </div>
                 </div>
 
@@ -125,7 +125,7 @@
                 <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="tecnico">Técnico</label>
-                        <input type="text" name="tecnico" class="form-control" placeholder="Técnico...">
+                        <input type="text" name="tecnico" class="form-control" placeholder="Técnico..." onkeyup="maiuscula(this)">
                         <!--<select name="marca" id="" class="form-control">
                             <option value=""></option>
                             <option value="">BRUNA</option>
@@ -160,4 +160,5 @@
 
             {!!Form::close()!!}
 
+            
 @stop
