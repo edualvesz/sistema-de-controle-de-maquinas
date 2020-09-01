@@ -25,6 +25,8 @@ Route::resource('maquina/rede', 'RedeController');
 
 Route::resource('maquina/aguardo', 'AguardoController');
 
+Route::resource('maquina/liberacao','LiberacaoController');
+
 Route::get('arquivo_pdf', 'PdfController@index');
 
 Route::get('arquivo_pdf/pdf', 'PdfController@pdf');

@@ -85,7 +85,7 @@
               </a>
               <ul class="treeview-menu">
                 <li><a href="#"><i class="fa fa-circle-o"></i> Aguardando reparo</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> Liberadas</a></li>
+                <li><a href="/maquina/liberacao"><i class="fa fa-circle-o"></i> Liberadas</a></li>
                 <li><a href="#"><i class="fa fa-circle-o"></i> Emissão de recibo</a></li>
                 <li><a href="#"><i class="fa fa-circle-o"></i> Emissão de identificação</a></li>
                 <li><a href="/maquina/reparo"><i class="fa fa-circle-o"></i> Lista Geral</a></li>
