@@ -62,4 +62,13 @@
             "@php artisan key:generate --ansi"
         ]
     }
+
+        "extra": {
+        "laravel": {
+            "dont-discover": [
+                "laravel/dusk"
+            ]
+        }
+    },
+
 }
